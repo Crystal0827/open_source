@@ -6,7 +6,7 @@ int main ()
 {
      string pattern_jpg; 
      vector<cv::String> img_files;
-      pattern_jpg = "/media/crystal/Data/Test_project/Example/*.jpg"; // “*” 代指全体图片名称，其后跟图片格式。
+      pattern_jpg = "/media/crystal/Data/Test_project/Example/*.jpg"; // “*” 代指这类图片的名称，其后跟图片格式。
      cv::glob(pattern_jpg,img_files); //glob()函数是用来收集一个文件夹中某类图片的，第一个参数是将图片地址及格式输入一个string变量中；第二个参数是结果，即你所需要的图片。
      for(int i = 0;i<img_files.size();i++)
      {
